@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
 // Serve static files from the 'public' directory
 app.use(express.static("public"));
